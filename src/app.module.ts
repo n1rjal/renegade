@@ -18,6 +18,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       host: 'db-postgresql-blr1-02032-do-user-9241365-0.b.db.ondigitalocean.com',
       database: 'defaultdb',
       password: 'GGWzjtjf65CU2C5z',
+      autoLoadEntities: true,
       username: 'doadmin',
       synchronize: true,
       entities: ['dist/**/*.entity{.js,.ts}'],
