@@ -22,6 +22,13 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       synchronize: true,
       entities: ['dist/**/*.entity{.js,.ts}'],
       logging: true,
+      ssl: true,
+      extra: {
+        max: 100,
+        ssl: {
+          rejectUnauthorized: false,
+        },
+      },
     }),
     AurdinoModule,
     SurveyModule,
