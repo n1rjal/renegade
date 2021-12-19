@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { AurdinoService } from './aurdino.service';
+import { AurdinoGateway } from './aurdino.gateway';
 
 @Module({
-  providers: [AurdinoService]
+  providers: [AurdinoGateway]
 })
 export class AurdinoModule {}

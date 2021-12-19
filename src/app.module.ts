@@ -7,6 +7,7 @@ import { ConfigModule } from '@nestjs/config';
 import { AurdinoModule } from './aurdino/aurdino.module';
 import { SurveyModule } from './survey/survey.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { UserModule } from './user/user.module';
 
 @Module({
   imports: [
@@ -33,6 +34,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     }),
     AurdinoModule,
     SurveyModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService, WeatherService],
